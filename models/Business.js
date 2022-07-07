@@ -33,7 +33,8 @@ const businessSchema = new Schema({
     review_count: {
         type: Number,
         required: true
-    }
+    },
+    websiteUrl: String
 })
 
 module.exports = mongoose.model('Business', businessSchema)
