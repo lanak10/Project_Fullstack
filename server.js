@@ -7,6 +7,9 @@ require('./config/database')
 // ===== MIDDLEWARES =====
 app.use(express.json())
 
+// Check if we have a token and create req.user
+// app.use(require('./config/checkToken'))
+
 // ===== ROUTES =====
 // Businesses
 app.use('/api/v1/businesses', require('./routes/api/businesses'))
